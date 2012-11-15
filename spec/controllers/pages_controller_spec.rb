@@ -2,6 +2,8 @@ require 'spec_helper'
 
 describe PagesController do
   render_views
+
+  #sample comment  
   
   before(:each) do #gay adeed the before do end lesson4
     @base_title = "Ruby on Rails Tutorial Sample App"
