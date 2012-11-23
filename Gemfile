@@ -7,6 +7,8 @@ gem 'rails', '3.2.8'
 
 group :development do
   gem 'sqlite3'
+  # gem 'annotate-models', '1.0.4'
+  gem 'annotate', '2.4.0'
 end
 
 gem 'webrat'
