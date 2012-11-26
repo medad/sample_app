@@ -5,7 +5,7 @@ describe PagesController do
 
   #sample comment  
   
-  before(:each) do #gay adeed the before do end lesson4
+  before(:each) do #gay added 'before do end' lesson4
     @base_title = "Ruby on Rails Tutorial Sample App"
   end
 
