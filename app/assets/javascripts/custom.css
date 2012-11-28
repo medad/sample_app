@@ -121,11 +121,15 @@ td.main {
 	padding: 1em;
 	vertical-align: top;
 	background: #ffc;
-
 }
-
 
 .profile img.gravatar {
   border: 1px solid #999;
   margin-bottom: -15px;
+}
+
+div.field, div.actions{
+
+	margin-bottom: 10px;
+	
 }
