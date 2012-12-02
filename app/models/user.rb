@@ -35,7 +35,7 @@ class User < ActiveRecord::Base
 
   # def User.authenticate(email, submitted_password)
   # end  -- Note gai, you can use class << self instead (another way so that )
-  # -- you cannot use hte User.authenticate, instead use def authenticate
+  # -- you cannot use the User.authenticate, instead use def authenticate
   class << self
     def authenticate(email, submitted_password)
       user = User.find_by_email(email)
