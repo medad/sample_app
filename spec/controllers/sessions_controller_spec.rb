@@ -60,7 +60,8 @@ describe SessionsController do
 
   describe "DELETE 'destroy'" do
     it "should sign a user out" do
-      test_sign_in(Factory(:user))
+      test_sign_in(Factory(:user)) 
+      # define test_sign_in in the spec_helper.rb , a place where you can use the function everywhere. , like glboal
       delete :destroy 
       controller.should_not be_signed_in
       response.should redirect_to(root_path)      

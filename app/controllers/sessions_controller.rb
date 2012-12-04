@@ -4,7 +4,7 @@ class SessionsController < ApplicationController
   end
 
   def create
-  	# NOte; this is the hash generated.
+  # NOte; this is the hash generated.
 	# session:
 	#   email: sample user
 	#   password: user1@sample.com
@@ -25,6 +25,7 @@ class SessionsController < ApplicationController
   end
 
   def destroy
-  	
+  	sign_out
+    redirect_to root_path
   end   
 end

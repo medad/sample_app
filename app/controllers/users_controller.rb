@@ -14,6 +14,9 @@ class UsersController < ApplicationController
     # raise params[:user].inspect
     @user = User.new(params[:user])
     if @user.save      
+
+      sign_in @user
+
       #handle the successful save
       #flash[:success] = "Welcome to the Sample App!" //gai note, can combime with redirect_to
       #redirect_to  user_path(@user) //gai notes; can do also @user without user_path
